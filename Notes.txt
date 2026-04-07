@@ -1,0 +1,33 @@
+Node JS
+---------
+>> NodeJs is a runtime environment that allows you to run JavaScript outside the browser.
+
+node -v
+npm -v
+
+Terminal--> node filename
+
+npm init
+
+Key Features 
+-------------
+Single-Threaded 
+Event-driven
+Non-Blocking IO
+
+Event - Looping 
+---------------
+Nod.js used an event loop to handle multiple tasks efficiently using non-blocking operations.
+Event-loop is a manager that manages the tasks.
+
+Event Loop Flow 
+-----------------
+>> Executes main code.
+>> Sends Async task to libuv(bg)
+>> Call Back queue waits.
+>> Event loop pushes to call stack.
+
+Modules in Node.JS
+-------------------
+>> Node JS uses modular Architecture
+>> code split into multiple reusable files
