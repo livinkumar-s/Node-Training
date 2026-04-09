@@ -31,3 +31,12 @@ Modules in Node.JS
 -------------------
 >> Node JS uses modular Architecture
 >> code split into multiple reusable files
+
+
+Callback Functions 
+-------------------
+> A function passed as an arguement to another function, executed later.
+
+Promises 
+---------
+>> An object representing eventual completion (or failure) of an async operation.
