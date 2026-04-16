@@ -40,3 +40,34 @@ Callback Functions
 Promises 
 ---------
 >> An object representing eventual completion (or failure) of an async operation.
+
+Server 
+----------
+>> It is a computer or software listens for requests and sends back responses.
+
+METHODS 
+----------
+GET  --> Retrive
+POST --> Send data
+PUT --> Update data
+DELETE --> Delete data
+PATCH ---> Small data updation
+
+Headers 
+---------
+>> Additional informations about req
+> Auth tokens
+>> content type
+
+Status Code 
+------------
+100-599
+
+1xx --> In Progress 
+2xx --> Success 
+3xx --> Redirected 
+4xx --> Client 
+5xx --> Server
+
+GET /users --> retriving all users
+POST /user {id, name} --> adding user
