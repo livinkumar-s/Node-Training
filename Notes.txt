@@ -71,3 +71,51 @@ Status Code
 
 GET /users --> retriving all users
 POST /user {id, name} --> adding user
+
+
+REST API 
+----------
+REST ---> Representational State Transfer
+>> A REST is a set of rules that allows a client (Frontend/mobile App) to talk to a server.
+
+REST is based on Resources
+
+users 
+products 
+orders
+
+each resource is accessed using urls
+--------------------------------------
+/users 
+/users/:id 
+/orders
+
+GET /users, GET /getUsers
+
+HTTP
+------
+>> Stateless Protocol.
+
+Request Structure 
+--------------------
+Every API request has 3 parts 
+-------------------------------
+Params ---> /users/10
+>> identifying resource 
+Query ---> ?key=value
+>> used for filteration
+Body ---> Used in PUT/PATCH/POST
+{
+    "key":"value"
+}
+
+Response Structure 
+--------------------
+{
+    "success":true,
+    "message":"User created Successfully",
+    "data":{
+        "id":2,
+        "name"..........
+    }
+}
