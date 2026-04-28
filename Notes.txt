@@ -119,3 +119,14 @@ Response Structure
         "name"..........
     }
 }
+
+REST API Developmment
+----------------------
+Representational State Transfer
+
+>> Uses HTTP methods (GET,POST....)
+>> Use URL to identrify Resources
+>> Sends data in JSON
+>> Uses status code 
+>> Keeps server stateless.(each req contains all necessary info).
+
