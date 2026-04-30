@@ -130,3 +130,31 @@ Representational State Transfer
 >> Uses status code 
 >> Keeps server stateless.(each req contains all necessary info).
 
+MongoDB
+----------
+>> MongoDB is a NoSQL DB used to store data in flexible JSON-like Format.
+BSON --> Binary JSON 
+
+{
+    key: value,
+    key: value...
+}
+
+db --> table --> data ()
+       (2 fields)
+db --> collection --> documents
+
+Document --> A single record.
+Collection --> A group of documents
+
+Mongosh 
+--------
+MongoDB shell.. CLI to interact with mongoDB.
+
+Mongoose
+------------
+NodeJS library for working with MongoDB easily.
+
+Schema
+validation
+easier queries.....
