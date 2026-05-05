@@ -8,11 +8,18 @@
 <body>
     
 
-    <form action="http://localhost:3333/student" method="post">
-        <input type="text" name="name">
-        <input type="number" name="age">
+    <form action="http://localhost:3333/api/auth/login" method="post">
+        <input type="email" name="email">
+        <input type="password" name="password">
         <button>submit</button>
     </form>
+
+    
+
+    <script>
+        console.log(document.cookie);
+        
+    </script>
 
 </body>
 </html>

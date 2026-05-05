@@ -4,6 +4,8 @@ const actorSchema = new mongoose.Schema({
     name: String,
     age: Number,
     noOfMovies: Number
+},{
+    timestamps:true
 })
 
 
