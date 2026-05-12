@@ -18,7 +18,9 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-
+app.get("/",(req,res)=>{
+    res.status(200).json({message:"API is running!"})
+})
 // req Handling 
 app.use("/api/auth", authRouter)
 app.use("/api/notes",notesRouter)
