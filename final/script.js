@@ -27,6 +27,12 @@ app.get("/", (req, res) => {
 
 app.use("/api/auth", authRouter)
 app.use("/api/notes", notesRouter)
+const PORT = process.env.PORT || 3333;
+const server = app.listen(PORT, () => {
+    console.log(`🚀 Server running on port ${PORT}`);
+    console.log(`📚 API Documentation: http://localhost:${PORT}/api`);
+    console.log(`🔍 Health Check: http://localhost:${PORT}/health`);
+});
 
 // IMPORTANT FOR VERCEL
 export default app
