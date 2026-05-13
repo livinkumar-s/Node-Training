@@ -38,7 +38,10 @@
         }
 
         async function getAllNotes() {
-            const response = await fetch("https://node-training-backend.vercel.app/api/notes/allnotes")
+            const response = await fetch("https://node-training-backend.vercel.app/api/notes/allnotes",{
+                method:"GET",
+                credentials:"include"
+            })
             if (response.ok) {
                 const data = await response.json()
                 console.log(data);
