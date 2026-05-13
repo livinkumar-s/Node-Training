@@ -84,8 +84,8 @@ export const logIn = async (req, res) => {
 
         res.cookie("auth", token, {
             httpOnly: true,
-            secure: false,
-            sameSite: true, //CSRF
+            secure: true,
+            sameSite: "none", //CSRF
             maxAge: 60 * 60 * 1000
         }).status(201).json({
             success: true,
@@ -117,8 +117,8 @@ export const logOut = async (req, res) => {
         if (req.user?.email) {
             res.clearCookie("auth", {
                 httpOnly: true,
-                secure: false,
-                sameSite: true, //CSRF
+                secure: true,
+                sameSite: "none", //CSRF
             }).json({
                 message:"Successfully logged out...!"
             })
