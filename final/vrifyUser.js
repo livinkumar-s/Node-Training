@@ -2,6 +2,7 @@ import jsonwebtoken from "jsonwebtoken"
 
 const verifyUser = async (req, res, next) => {
     let token;
+    console.log(req.cookies?.auth);
     if (req.cookies?.auth) token = req.cookies?.auth;
     else if (req.headers?.authorization?.startsWith("Bearer")) token=req.headers?.authorization.split(" ")[1]
     
