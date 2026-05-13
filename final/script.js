@@ -2,6 +2,7 @@ import express from "express"
 import mongoose from "mongoose"
 import dotenv from "dotenv"
 import cors from "cors"
+import cookieParser from "cookie-parser"
 import authRouter from "./routers/authRouter.js"
 import notesRouter from "./routers/notesRouter.js"
 
@@ -10,8 +11,10 @@ dotenv.config()
 const app = express()
 
 app.use(cors({
-    origin:["http://localhost:5500"]
+    origin:["http://localhost:5500"],
+    credentials:true
 }))
+app.use(cookieParser())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
